@@ -1,0 +1,67 @@
+<!-- <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+require '../vendor/autoload.php';
+
+$mail = new PHPMailer(true);
+?> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L&J Better Benefits</title>
+
+    <link rel="stylesheet" href="../css files/loginQuote.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="container">
+         <a href="../index.html"  class="home-btn"> <i class="fas fa-arrow-left"></i>  Home</a>
+
+        <h2 style="text-align: center; color:rgb(12, 6, 99) ;">Get A Quote</h2>
+        <!-- <?php if (isset($_POST['getdata'])) {
+            echo 11111;
+        }
+        ?> -->
+        <form id="signupForm" method="post">
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="text" id="phoneNumber" name="phoneNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="healthQuestions">Health Questions</label>
+                <textarea id="healthQuestions" name="healthQuestions" required></textarea>
+            </div>
+            <button type="submit" name="getdata">Sign Up</button>
+        </form>
+    </div>
+   
+</body>
+<script src="../js files/loginQuote.js"></script>
+</html>
